@@ -1,0 +1,214 @@
+#promptt{
+    position: absolute;
+  right: 0;
+  margin-top: -10;
+    background-color: rgb(130, 106, 44);
+    width:20% ;
+    height:100% ;
+    color: #a38d59;
+    text-align: center;
+
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #010101;
+    line-height: 1.6;
+}
+#playerse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(130, 106, 44);
+  width: 20%;
+  height: 100%;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* or center if you want things centered horizontally */
+
+}
+.bio{
+  width:75%;
+  height:20%;
+  background-color: rgb(177, 147, 73);
+  margin:20px;
+  border: solid 2px black;
+  border-radius: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start; /* or center if you want things centered horizontally */
+}
+.textt{
+  margin:0px;
+  
+}
+#quit{
+  z-index: 15; /* Make sure it's higher than other elements */
+  font-size: 16px;
+  background-color: rgb(164, 87, 49);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  width: auto;
+
+}
+#quit:hover{
+  background-color: rgb(224, 96, 32);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12%;
+  
+}
+#trade{
+  z-index: 15; /* Make sure it's higher than other elements */
+  font-size: 16px;
+  background-color: rgb(124, 92, 38);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  width:100%;
+}
+#trade:hover{
+  background-color: rgb(224, 96, 32);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+#menucard{
+  position:absolute;
+  background-color: rgba(22, 22, 22, 0);
+  width:61%;
+  margin-left: 19%;
+  height:19%;
+  top:550px;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  transition: all 0.3s ease;
+}
+#menucard:hover{
+  height:30%;
+  top:470px;
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover{
+  width: 80px !important;
+  height:144px !important;
+  margin-top: -25px !important;
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  z-index: 20;
+  font-size: 15px !important;
+}
+#purchase{
+  z-index: 15; /* Make sure it's higher than other elements */
+  font-size: 16px;
+  background-color: rgb(124, 92, 38);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  width:100%;
+}
+
+#purchase:hover{
+  background-color: rgb(224, 96, 32);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  
+}
+#end_turn{
+  z-index: 15; /* Make sure it's higher than other elements */
+  font-size: 16px;
+  background-color: rgb(124, 92, 38);
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  width:100%;
+}
+#end_turn:hover{
+  background-color: rgb(224, 96, 32);
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+  
+}
+.lr{
+  width:20%;
+  height:10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(212, 181, 26);
+  flex: 0 0 40%; /* 100% / 4 items per row */
+  box-sizing: border-box;
+}
+.la{
+  width:20%;
+  height:3px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(154, 32, 224);
+  flex: 0 0 40%; /* 100% / 4 items per row */
+  box-sizing: border-box;
+}
+#upgrade_card{
+  position:absolute;
+  background-color: rgb(124, 92, 38);
+  width:13%;
+  left:84%;
+  top:60%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  column-gap: 10px;
+  z-index: 200;
+  border: 3px solid black;
+  border-radius: 5%;
+  transition: all 0.3s ease;
+
+}
+#roll_number{
+  position:absolute;
+  background-color: rgb(124, 92, 38);
+  width:13%;
+  left:84%;
+  top:50%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+  column-gap: 10px;
+  z-index: 200;
+  border: 3px solid black;
+  border-radius: 5%;
+  transition: all 0.3s ease;
+
+}
+body{
+  background-color: rgb(114, 187, 187);
+}
+#main_menu {
+  background-image: linear-gradient(45deg, rgb(24, 112, 132), rgb(194, 234, 244));
+}
+#TITLR{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
