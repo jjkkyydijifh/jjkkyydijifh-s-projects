@@ -273,6 +273,7 @@ function move_robber(a){
         a.robber = true
         $("#aa"+(lands.findIndex(p => p.robber === true) + 1)).css({backgroundColor:"gray"})
 }
+
 async function roll_7(){
     console.log("the function is being played")
     let rofrf;
@@ -318,11 +319,12 @@ async function roll_7(){
 
     }
     let rofe = parseInt(getobject("visual", "#" + rofex, settlements).owner) - 1
+    console.log(rofe)
     let wee;
     if(rofe == -1){
         wee = false
     }else{
-        if (requirments(0,0,0,0,0,rofe + 1)) {
+        if ((players[rofe + 1]).brick == 0 && (players[rofe + 1]).grain == 0 && (players[rofe + 1]).wool == 0 && (players[rofe + 1]).ore == 0&& (players[rofe + 1]).lumber == 0) {
             alert("no resources")
             wee = false
         }else{
@@ -332,49 +334,50 @@ async function roll_7(){
      
     while(wee){
         let retosetal = Math.floor((Math.random() * 5)+1);
+        console.log((players[rofe]).ore)
         switch(retosetal){
-            case 1:if(players[rofe - 1].ore == 0){
-                alert("no ore")
+            case 1:if((players[rofe]).ore == 0){
+                //alert("no ore")
                 continue
                 
             }else{
-                players[rofe - 1].ore--
+                (players[rofe]).ore--
                 players[player_turn - 1].ore++
                 wee = false
             }
                 ;break;
-            case 2:if(players[rofe - 1].brick == 0){
-                alert("no brick")
+            case 2:if((players[rofe]).brick == 0){
+                //alert("no brick")
                 continue
             }else{
-                players[rofe - 1].brick--
+                (players[rofe]).brick--
                 players[player_turn - 1].brick++
                 wee = false
             }
                 ;break;
-            case 3:if(players[rofe - 1].grain == 0){
-                alert("no grain")
+            case 3:if((players[rofe]).grain == 0){
+                //alert("no grain")
                 continue
             }else{
-                players[rofe - 1].grain--
+                (players[rofe]).grain--
                 players[player_turn - 1].grain++
                 wee = false
             }
                 ;break;
-            case 4:if(players[rofe - 1].wool == 0){
-                alert("no wool")
+            case 4:if((players[rofe]).wool == 0){
+                //alert("no wool")
                 continue
             }else{
-                players[rofe - 1].wool--
+                (players[rofe]).wool--
                 players[player_turn - 1].wool++
                 wee = false
             }
                 ;break;
-            case 5:if(players[rofe - 1].lumber == 0){
-                alert("no lumber")
+            case 5:if((players[rofe]).lumber == 0){
+                //alert("no lumber")
                 continue
             }else{
-                players[rofe - 1].lumber--
+                (players[rofe]).lumber--
                 players[player_turn - 1].lumber++
                 wee = false
             }
@@ -2504,3 +2507,4 @@ $(document).ready(async function() {
     
     
 })
+
